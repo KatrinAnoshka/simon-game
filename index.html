@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simon Game</title>
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+
+	<div class="container">
+	
+<!-- 	Button Instructions -->
+	<button class="btn">instructions</button>
+
+<!-- Simon Game	 -->
+	<div class="simonGame">
+
+<!-- 	Top squares: green and red	 -->
+		<div class="topSquare">
+			<div class="push clickable greenSquare" id='green'></div>
+			<div class="push clickable redSquare" id='red'></div>
+		</div>	
+
+<!-- 	Bottom squares: yellow and blue	 -->
+		<div class="bottomSquare">
+			<div class="push clickable yellowSquare" id='yellow'></div>
+			<div class="push clickable blueSquare" id='blue'></div>
+    	</div>
+
+  	</div><!-- 	End of SimonGame	 -->
+
+<!-- Inner Round	 -->
+	<div class="innerRound">
+		
+		<h1>Simon<sup>&reg;</sup></h1>
+		
+		<div class="mainPanel">
+			
+<!-- 		Count Panel	 -->
+			<div class="countPanel">
+				<div class="count"><span>--</span></div>
+				<p class="countTitle">Count</p>
+			</div>
+
+<!-- 		Start Panel	 -->
+			<div class="startPanel">
+				<div class="start"></div>
+				<p class="startTitle">Start</p>
+			</div>	
+
+<!--    Strict Panel	 -->
+			<div class="strictPanel">						
+				<div class="strictIndicator"></div>
+				<div class="strict"></div>
+				<p class="strictTitle">Strict</p>			
+			</div>
+			
+		</div> <!-- End of Main panel of Inner round  -->
+	
+<!--  	Toggle ON/OFF	 -->
+		<div class="toggle">  
+		    <input type="checkbox" value="None" id="toggle" name="check" checked />
+		    <label for="toggle"></label>
+    	</div>
+		
+	</div><!--  End of Inner Round  -->
+ 
+<!-- Instructions	 -->
+	<div class="instructions">
+
+		<!-- 	Button Delete	 -->
+		<div class="delete">&#9747;</div>
+		<h2>Simon Game</h2>
+		<h3>Instructions:</h3>
+		<ol>
+			<li>Slide the ON/OFF switch to ON.</li>
+			<li>Click button "Start" to begin the game.</li>
+			<li>The game creates a series of signals and requires a user to repeat the sequence.</li>
+			<li>If the user succeeds, the series becomes progressively longer and more complex. </li>
+			<li>In strict mode, pressing the incorrect signal will end the current series and generate a new one.</li>
+		</ol>
+		<p class="luck">Good Luck!</p>
+	
+	</div><!--  End of Instructions   -->
+
+</div><!--  End of Container   -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
